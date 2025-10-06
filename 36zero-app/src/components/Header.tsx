@@ -12,18 +12,36 @@ export default function Header() {
           </div>
           
           {/* Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="#routes" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+          <nav className="hidden md:flex space-x-6">
+            <a href="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Home
+            </a>
+            <a href="/adventure-yachts" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Adventure Yachts
+            </a>
+            <a href="/zen-yachts" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              ZEN Yachts
+            </a>
+            <a href="/brokerage-listings" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Brokerage Listings
+            </a>
+            <a href="/zerolap" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
               ZeroLap
             </a>
-            <a href="#inventory" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Yacht Dealerships
+            <a href="/ownership" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Ownership
             </a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+            <a href="/training-crew" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Training & Crew
+            </a>
+            <a href="/service-maintenance-partners" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Service & Maintenance Partners
+            </a>
+            <a href="/about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
               About
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Contact
+            <a href="/contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+              Contact / Book a Sea Trial
             </a>
           </nav>
           

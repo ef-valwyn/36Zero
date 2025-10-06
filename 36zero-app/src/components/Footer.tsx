@@ -21,25 +21,29 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* Quick Links */}
+          {/* Navigation */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <h4 className="text-lg font-semibold">Navigation</h4>
             <ul className="space-y-2">
-              <li><a href="#routes" className="text-gray-300 hover:text-blue-400">ZeroLap</a></li>
-              <li><a href="#inventory" className="text-gray-300 hover:text-blue-400">Yacht Dealerships</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-blue-400">About Us</a></li>
-              <li><a href="#sustainability" className="text-gray-300 hover:text-blue-400">Sustainability</a></li>
+              <li><a href="/adventure-yachts" className="text-gray-300 hover:text-blue-400">Adventure Yachts</a></li>
+              <li><a href="/zen-yachts" className="text-gray-300 hover:text-blue-400">ZEN Yachts</a></li>
+              <li><a href="/brokerage-listings" className="text-gray-300 hover:text-blue-400">Brokerage Listings</a></li>
+              <li><a href="/zerolap" className="text-gray-300 hover:text-blue-400">ZeroLap</a></li>
+              <li><a href="/ownership" className="text-gray-300 hover:text-blue-400">Ownership</a></li>
+              <li><a href="/training-crew" className="text-gray-300 hover:text-blue-400">Training & Crew</a></li>
+              <li><a href="/service-maintenance-partners" className="text-gray-300 hover:text-blue-400">Service & Maintenance Partners</a></li>
             </ul>
           </div>
           
-          {/* Services */}
+          {/* Company */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Services</h4>
+            <h4 className="text-lg font-semibold">Company</h4>
             <ul className="space-y-2">
-              <li><a href="#passenger" className="text-gray-300 hover:text-blue-400">Passenger Transport</a></li>
-              <li><a href="#cargo" className="text-gray-300 hover:text-blue-400">Cargo Shipping</a></li>
-              <li><a href="#charter" className="text-gray-300 hover:text-blue-400">Charter Services</a></li>
-              <li><a href="#maintenance" className="text-gray-300 hover:text-blue-400">Maintenance</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-blue-400">About</a></li>
+              <li><a href="/press-media-kit" className="text-gray-300 hover:text-blue-400">Press & Media Kit</a></li>
+              <li><a href="/events" className="text-gray-300 hover:text-blue-400">Events</a></li>
+              <li><a href="/careers" className="text-gray-300 hover:text-blue-400">Careers</a></li>
+              <li><a href="/newsletter" className="text-gray-300 hover:text-blue-400">Newsletter</a></li>
             </ul>
           </div>
           
@@ -70,9 +74,12 @@ export default function Footer() {
               © 2024 36Zero. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#privacy" className="text-gray-400 hover:text-blue-400 text-sm">Privacy Policy</a>
-              <a href="#terms" className="text-gray-400 hover:text-blue-400 text-sm">Terms of Service</a>
-              <a href="#cookies" className="text-gray-400 hover:text-blue-400 text-sm">Cookie Policy</a>
+              <a href="/press-media-kit" className="text-gray-400 hover:text-blue-400 text-sm">Press & Media Kit</a>
+              <a href="/events" className="text-gray-400 hover:text-blue-400 text-sm">Events</a>
+              <a href="/terms" className="text-gray-400 hover:text-blue-400 text-sm">Terms</a>
+              <a href="/privacy" className="text-gray-400 hover:text-blue-400 text-sm">Privacy</a>
+              <a href="/careers" className="text-gray-400 hover:text-blue-400 text-sm">Careers</a>
+              <a href="/newsletter" className="text-gray-400 hover:text-blue-400 text-sm">Newsletter</a>
             </div>
           </div>
         </div>

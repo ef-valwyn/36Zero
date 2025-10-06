@@ -13,8 +13,8 @@ export default function Home() {
         highSrc="https://yyofqqbn0jyxo9dg.public.blob.vercel-storage.com/videos/no-excuse/No Excuse Hero Short.mp4"
         ultraLowSrc="https://yyofqqbn0jyxo9dg.public.blob.vercel-storage.com/videos/no-excuse/hero-loop-540p.mp4"
         poster="/img/hero/home-hero.jpg"
-        heading="Your Journey to Zero Emissions"
-        subheading="Experience sustainable marine transportation with our eco-friendly routes and cutting-edge electric vessels. Join the future of maritime travel."
+        heading="The World's First Integrated Zero-Emission Yacht Ownership Platform"
+        subheading="The World's First Integrated Zero-Emission Yacht Ownership Platform."
         quality="auto"
       />
       
