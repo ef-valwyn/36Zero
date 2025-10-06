@@ -1,5 +1,5 @@
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import VideoStrip from '@/components/VideoStrip';
 import LeadForm from '@/components/LeadForm';
 import Footer from '@/components/Footer';
 
@@ -7,7 +7,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Hero />
+      <VideoStrip
+        mode="hero"
+        lowSrc="https://yyofqqbn0jyxo9dg.public.blob.vercel-storage.com/videos/no-excuse/No Excuse Hero Short.mp4"
+        highSrc="https://yyofqqbn0jyxo9dg.public.blob.vercel-storage.com/videos/no-excuse/No Excuse Hero Short.mp4"
+        ultraLowSrc="https://yyofqqbn0jyxo9dg.public.blob.vercel-storage.com/videos/no-excuse/hero-loop-540p.mp4"
+        poster="/img/hero/home-hero.jpg"
+        heading="Your Journey to Zero Emissions"
+        subheading="Experience sustainable marine transportation with our eco-friendly routes and cutting-edge electric vessels. Join the future of maritime travel."
+        quality="auto"
+      />
       
       {/* Contact Form Section */}
       <section id="contact" className="py-16 bg-gray-50">
