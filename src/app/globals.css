@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { @apply bg-white text-slate-800; }
+.container-xl { @apply max-w-7xl mx-auto px-4; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium border; }
+.btn-primary { @apply bg-slate-900 text-white border-slate-900 hover:bg-slate-800; }
+.btn-ghost { @apply border-slate-300 hover:bg-slate-50; }
+.badge { @apply text-xs px-2 py-1 rounded-md bg-slate-100 text-slate-700; }
+.card { @apply rounded-2xl border border-slate-200 shadow-sm; }

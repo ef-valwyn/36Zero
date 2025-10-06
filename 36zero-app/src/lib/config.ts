@@ -15,20 +15,20 @@ export const config = {
   
   // Email Configuration
   email: {
-    from: process.env.EMAIL_FROM || 'noreply@36zero.com',
-    replyTo: process.env.EMAIL_REPLY_TO || 'info@36zero.com',
+    from: process.env.EMAIL_FROM || 'noreply@36zeroyachting.com',
+    replyTo: process.env.EMAIL_REPLY_TO || 'info@36zeroyachting.com',
   },
   
   // Contact Information
   contact: {
     phone: '+1 (555) 123-4567',
-    email: 'info@36zero.com',
+    email: 'info@36zeroyachting.com',
     address: {
-      street: '123 Harbor Drive',
-      city: 'Marina Bay',
-      state: 'CA',
-      zip: '90210',
-      country: 'USA',
+      street: '160 Robinson Road',
+      city: 'Singapore',
+      state: 'Singapore',
+      zip: '068885',
+      country: 'Singapore',
     },
   },
   
@@ -56,3 +56,18 @@ export const config = {
 } as const;
 
 export type Config = typeof config;
+
+// Legacy exports for compatibility
+export const FLAGS = {
+  enableZen: process.env.NEXT_PUBLIC_ENABLE_ZEN === 'true',
+  enableAnalytics: process.env.NODE_ENV === 'production',
+  enableEmailNotifications: true,
+  enableMaintenanceMode: false,
+};
+
+export const SITE = {
+  name: '36Zero',
+  logo: '/logo.svg', // You'll need to add this logo file
+  description: 'Sustainable marine transportation with zero emissions',
+  url: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
+};

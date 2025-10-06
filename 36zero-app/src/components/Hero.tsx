@@ -60,14 +60,10 @@ export default function Hero() {
           {/* Video Player */}
           <VideoPlayer 
             title="hero_video"
-            autoPlay={true}
-            controls={true}
-            loop={true}
-            // Uncomment and configure one of these options:
-            // youtubeId="YOUR_YOUTUBE_VIDEO_ID"
-            // vimeoId="YOUR_VIMEO_VIDEO_ID"
-            // videoUrl="https://your-cdn.com/video.mp4"
-            // posterUrl="https://your-cdn.com/poster.jpg"
+            autoPlay
+            controls
+            loop
+            videoUrl={process.env.NEXT_PUBLIC_HERO_VIDEO_URL as string}
           />
         </div>
       </div>

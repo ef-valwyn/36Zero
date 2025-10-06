@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { FLAGS } from "@/lib/config";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false } // noindex while stealth
+};
+
+export default function ZenYachts() {
+  if (!FLAGS.enableZen) {
+    // Optional: keep the route accessible for preview but flagged
+  }
+  return (
+    <div className="container-xl py-12 space-y-6">
+      <h1 className="text-3xl font-semibold">ZEN Yachts (Staged)</h1>
+      <p>Solar-electric carbon catamarans (ZEN52/ZEN55), optionally wingsail-equipped for true zero-emission passages.</p>
+    </div>
+  );
+}

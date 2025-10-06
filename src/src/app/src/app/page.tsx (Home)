@@ -1,0 +1,38 @@
+import Hero from "@/components/Hero";
+import CredibilityBar from "@/components/CredibilityBar";
+import FeatureTiles from "@/components/FeatureTiles";
+import RouteTeasers from "@/components/RouteTeasers";
+import VideoStrip from "@/components/VideoStrip";
+import LeadForm from "@/components/LeadForm";
+import { FLAGS } from "@/lib/config";
+
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      <CredibilityBar />
+      <FeatureTiles showZen={FLAGS.enableZen} />
+      <VideoStrip />
+      <RouteTeasers />
+      <section className="container-xl py-12 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 className="text-2xl font-semibold mb-3">Owner’s Guide: From Rig to Quiet Power</h2>
+          <p className="text-slate-600">Get the PDF—how blue-water families upgrade to quiet, efficient powercats.</p>
+        </div>
+        <div className="card p-5">
+          <LeadForm type="owners-guide" />
+        </div>
+      </section>
+      <section className="container-xl py-12 text-center">
+        <div className="card p-8">
+          <h3 className="text-xl font-semibold">Plan your private yard tour or sea trial</h3>
+          <p className="text-slate-600 mt-2">We’ll arrange Rayong commissioning access or model-specific sea trials.</p>
+          <div className="mt-6 flex gap-3 justify-center">
+            <a href="/contact" className="btn btn-primary">Book Yard Tour</a>
+            <a href="/contact" className="btn btn-ghost">Request Sea Trial</a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
