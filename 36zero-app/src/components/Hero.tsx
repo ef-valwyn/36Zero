@@ -1,5 +1,9 @@
+'use client';
+
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
+import { trackButtonClick, trackEvent } from '@/lib/tracking';
+import VideoPlayer from './VideoPlayer';
 
 export default function Hero() {
   return (
@@ -20,11 +24,17 @@ export default function Hero() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center">
+              <button 
+                onClick={() => trackButtonClick('explore_routes_hero')}
+                className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center"
+              >
                 Explore Routes
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center">
+              <button 
+                onClick={() => trackButtonClick('watch_video_hero')}
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center"
+              >
                 <Play className="mr-2 h-5 w-5" />
                 Watch Video
               </button>
@@ -47,17 +57,18 @@ export default function Hero() {
             </div>
           </div>
           
-          {/* Image/Video Placeholder */}
-          <div className="relative">
-            <div className="bg-blue-500 rounded-2xl aspect-video flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Play className="h-8 w-8 text-white ml-1" />
-                </div>
-                <p className="text-blue-100">Watch our story</p>
-              </div>
-            </div>
-          </div>
+          {/* Video Player */}
+          <VideoPlayer 
+            title="hero_video"
+            autoPlay={true}
+            controls={true}
+            loop={true}
+            // Uncomment and configure one of these options:
+            // youtubeId="YOUR_YOUTUBE_VIDEO_ID"
+            // vimeoId="YOUR_VIMEO_VIDEO_ID"
+            // videoUrl="https://your-cdn.com/video.mp4"
+            // posterUrl="https://your-cdn.com/poster.jpg"
+          />
         </div>
       </div>
     </section>

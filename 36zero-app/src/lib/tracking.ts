@@ -1,4 +1,5 @@
 // Analytics and tracking utilities
+import { clarity } from '@/components/Clarity';
 
 interface TrackingEvent {
   event: string;
@@ -18,6 +19,8 @@ class Analytics {
   // Set user ID for tracking
   setUserId(userId: string): void {
     this.userId = userId;
+    // Also set in Clarity
+    clarity.setUserId(userId);
   }
 
   // Track page views
@@ -77,11 +80,6 @@ class Analytics {
 
   // Private track method
   private track(event: string, properties?: Record<string, any>): void {
-    if (!this.isEnabled) {
-      console.log('Analytics (dev):', { event, properties, userId: this.userId });
-      return;
-    }
-
     const trackingEvent: TrackingEvent = {
       event,
       properties,
@@ -89,8 +87,21 @@ class Analytics {
       timestamp: Date.now(),
     };
 
-    // In production, you would send this to your analytics service
-    // For now, we'll just log it
+    if (!this.isEnabled) {
+      console.log('Analytics (dev):', trackingEvent);
+      return;
+    }
+
+    // Send to Clarity for custom events
+    clarity.event(event);
+    
+    // Set custom properties in Clarity if provided
+    if (properties) {
+      Object.entries(properties).forEach(([key, value]) => {
+        clarity.set(key, String(value));
+      });
+    }
+
     console.log('Analytics:', trackingEvent);
 
     // Example: Send to Google Analytics, Mixpanel, etc.
