@@ -14,10 +14,10 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
             <a href="#routes" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Routes
+              ZeroLap
             </a>
             <a href="#inventory" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-              Inventory
+              Yacht Dealerships
             </a>
             <a href="#about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
               About

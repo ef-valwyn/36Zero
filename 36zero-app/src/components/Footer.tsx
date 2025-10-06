@@ -25,8 +25,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#routes" className="text-gray-300 hover:text-blue-400">Routes</a></li>
-              <li><a href="#inventory" className="text-gray-300 hover:text-blue-400">Fleet Inventory</a></li>
+              <li><a href="#routes" className="text-gray-300 hover:text-blue-400">ZeroLap</a></li>
+              <li><a href="#inventory" className="text-gray-300 hover:text-blue-400">Yacht Dealerships</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-blue-400">About Us</a></li>
               <li><a href="#sustainability" className="text-gray-300 hover:text-blue-400">Sustainability</a></li>
             </ul>
