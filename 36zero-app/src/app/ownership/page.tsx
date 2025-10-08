@@ -46,3 +46,4 @@ export default function OwnershipPage() {
     </div>
   );
 }
+
